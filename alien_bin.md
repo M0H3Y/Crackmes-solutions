@@ -15,13 +15,13 @@
 
 We are given a 64-bit ELF. when executing it, it asks for the password. 
 
-![](images/alien_bin_1.png)
+![](images/alien_bin_1.PNG)
 
 we can use `ltrace` which intercepts the dynamic library calls so we can see if there is a call to strcmp and what arguments are passed to it.
 
-![](images/alien_bin_2.png)
+![](images/alien_bin_2.PNG)
 
 Here we can see there is a call to strcmp with 2 parameters `mo` which is my input and `bd23cf3f56baa86bc` which is the right password.
 
-![](images/alien_bin_3.png)
+![](images/alien_bin_3.PNG)
 
