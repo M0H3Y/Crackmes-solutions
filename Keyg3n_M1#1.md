@@ -20,9 +20,9 @@ If we loaded this binary into IDA, we can see our input is checked using a funct
 
 ![](images/Keyg3n_ME_2.png)
 
-This function first checks the length of our input if it wasn't between 8 to 10 character, it will print `Nope <3` and exits otherwise, it will calcaulate the sum of the ascii values of the input characters and then checks if this sum is less then or equal to 999, it will also print `Nope <3`. 
+This function first checks the length of our input if it wasn't between 8 to 10 character, it will print `Nope <3` and exits otherwise, it will calcaulate the sum of the ascii values of our input and then checks if that sum is less than or equal to 999, it will also print `Nope <3`. 
 
-So our challenge is to generate a password whose length is between 8 to 10 characters and sum of its ascii values of its characters is greater than 1000. 
+So our challenge is to generate a password whose length is between 8 to 10 characters and the sum of the ascii values of its characters is greater than 1000. 
 
 Here is a simple script i've made with python to generate that key.
 ```python
